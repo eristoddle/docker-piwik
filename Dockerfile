@@ -9,5 +9,5 @@ RUN curl -L -O http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
 RUN chmod a+w /app/config
 
 EXPOSE 80
-VOLUME /app/
+VOLUME ["/app/config"]
 CMD ["/run.sh"]
